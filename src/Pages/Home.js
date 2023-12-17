@@ -47,13 +47,27 @@ const Home = () => {
       description: 'Spacious  ',
       Price: '65,000'
     },
+    {
+      id: "7",
+      Title: "Sidney Hall",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQbm-CZ4CZKwNAQNvFgQkExdSJJ1ZZ3RPpw&usqp=CAU",
+      description: '200 seats lecture hall ',
+      Price: '63,000'
+    },
+    {
+      id: "8",
+      Title: "Perth sidney",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWv6MmNrh0L-J-2WabU9xoB_cEA4oxVMPNpA&usqp=CAU",
+      description: 'Design for group activities and lectures ',
+      Price: '75,000'
+    },
   ];
   
   const [lectureHalls, setLectureHalls] = useState(initialData); // Define singular lectureHall state
 
   return (
     <Flex direction={'column'} p={4} gap={4}>
-      <SimpleGrid columns={3} spacing={5}>
+      <SimpleGrid columns={4} spacing={5}>
         {lectureHalls.map((lectureHall) => (
           <LectureHall key={lectureHall.id} lectureHall={lectureHall} />
         ))}
