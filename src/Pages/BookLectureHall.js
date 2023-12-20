@@ -9,6 +9,7 @@ import {
   Stack,
   Button,
 } from "@chakra-ui/react";
+import { BASE_URL } from "../Utils/main";
 
 function BookLectureHall() {
     const initialData = {
@@ -23,7 +24,7 @@ function BookLectureHall() {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch(`$(BASE_URL) /LectureHalls`,{
+        fetch(`${BASE_URL}/booklecturehall`,{
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -64,7 +65,7 @@ function BookLectureHall() {
             <FormControl isRequired>
               <FormLabel>phone number </FormLabel>
               <Input
-                name="phone number"
+                name="phone_number"
                 placeholder = '0112345678'
                 type = 'number'
                 required

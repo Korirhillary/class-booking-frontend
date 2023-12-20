@@ -56,7 +56,7 @@ const Home = () => {
     },
     {
       id: "8",
-      Title: "Perth sidney",
+      Title: "Perth",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWv6MmNrh0L-J-2WabU9xoB_cEA4oxVMPNpA&usqp=CAU",
       description: 'Design for group activities and lectures ',
       Price: '75,000'
