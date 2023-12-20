@@ -3,10 +3,10 @@ import { Link } from "react-router-dom"
 
 function NavBar() {
   return (
-    <Box>
+    <Box bg = "purple" py ={4}>
         <Flex justifyContent={'space-between'}>
             <HStack fontWeight={'bold'}>
-                <Link to = {'/'}> Home </Link>
+                <Link to = '/'style={{ fontSize:"24px",fontStyle:"italic"}}> TAIFA HALLS </Link>
             </HStack>
 
         </Flex>
